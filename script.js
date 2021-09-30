@@ -51,11 +51,11 @@ assassin: "IG-88"
 console.log(droids);
 
 // #3b
-console.log("R2-D2");
-
+// console.log("R2-D2");
+console.log(droids["astromech"]); // R2-D2
 // #3c
-console.log("C-3PO");
-
+// console.log("C-3PO");
+console.log(droids.protocol); // C-3PO
 // #3d
 (droids["assassin"]) = "IG-11";
 console.log(droids);
@@ -65,23 +65,26 @@ console.log(droids);
 console.log(starWarsVillians[0][6]);
 
 // #5
-
+console.log(sithLords.slice(-2, -1));
 
 // #6a
 const starWarsMovies = [
-{ episodeOne: "The Phantom Menace", 
-episodeTwo: "Attack of the Clones", episodeThree: "Revenge of the Sith"
+{ episodeOne: "The Phantom Menace"
+episodeTwo: "Attack of the Clones" 
+episodeThree: "Revenge of the Sith"
 },
 {
-episodeFour: "A New Hope", 
-episodeFive: "The Empire Strikes Back", episodeSix: "Return of the Jedi"
+episodeFour: "A New Hope" 
+episodeFive: "The Empire Strikes Back"
+episodeSix: "Return of the Jedi"
 },
 {
-episodeSeven: "The Force Awakens", 
-episodeEight: "The Last Jedi", 
+episodeSeven: "The Force Awakens"
+episodeEight: "The Last Jedi" 
 episodeNine: "The Rise of Skywalker"
 }];
 console.log(starWarsMovies);
 
 // #6b
-
+starWarsMovies.splice(1, 0, "Solo", "Rogue One");
+console.log(starWarsMovies);
